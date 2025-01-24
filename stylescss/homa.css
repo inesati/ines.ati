@@ -1,0 +1,1081 @@
+
+/* Restablece márgenes y paddings de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Asegura que los márgenes y el padding no afecten al ancho y alto de los elementos */
+}
+
+
+body{
+    background-image: url('../background/black.jpg');
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección manteniendo su calidad */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* Fija la imagen al fondo, no se moverá cuando haga scroll */
+    background-color: #000; /* Fondo de respaldo en caso de que la imagen no cargue */
+}
+
+ul{
+    list-style-type: none;  
+    padding: 0;            
+    margin: 0;    
+    display: flex;    
+    font-size: 30px;
+              
+}
+ul li {
+    display: inline; 
+    margin-right: 150px;  
+    font-family: 'Cormorant Garamond', serif; 
+    
+}
+
+
+header {
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;      
+    margin-top: 50px;   
+       
+}
+ul li:last-child {
+    margin-right: 250px;            
+}
+
+ul li a {
+    text-decoration: none;      
+       
+    color :white;          
+}
+
+ul li a:hover {
+    color: #e79fbe;            
+}
+
+.logo{
+   font-family: 'Dancing Script', cursive;
+   color:white;
+   margin-left: 50px;
+   font-size: 55px;
+   
+}
+.logo:hover{
+    color: #e79fbe;
+
+}
+
+
+/* Text Section Styling */
+.text,.text2 {
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.text {
+    font-size: 200px;
+    color: thistle;   
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    bottom: 50%;
+}
+
+.text2 {
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 60px;
+    position: absolute;
+    padding-left: 15%;
+   
+}
+.text, .text2 {
+    margin: 0; /* Elimina márgenes adicionales */
+    z-index: 1; /* Asegura que el texto quede encima de la imagen */
+    position: absolute;
+    left: 10%;
+}
+/* Image Section Styling */
+.image-container {
+    margin-top: 30px;
+}
+
+.pic {
+    width: 30%; 
+    height: 20%; 
+    object-fit: cover; 
+    border-radius: 350px 220px 310px 220px ;
+    margin-right: 200px;
+    margin-top: 80px;
+}
+
+.main {
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% de la altura de la ventana */
+    display: flex; /* Para alinear los elementos dentro */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    position: relative; /* Mantiene la imagen en su posición */
+}
+
+.main {
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% de la altura de la ventana */
+    display: flex; /* Para alinear los elementos dentro */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    position: relative; /* Mantiene la imagen en su posición */
+}
+.text{
+    position: absolute;
+    bottom: 50%;
+}
+.text2{
+    position: absolute;
+    padding-left: 15%;
+
+}
+.text, .text2 {
+    margin: 0; /* Elimina márgenes adicionales */
+    z-index: 1; /* Asegura que el texto quede encima de la imagen */
+    position: absolute;
+    left: 10%;
+}
+
+.pic {
+    width: auto; /* Ajusta automáticamente al contenido */
+    height: 50%; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Mantén las proporciones */
+    border-radius: 350px 220px 310px 220px;
+    position: absolute; /* Coloca la imagen en una posición específica */
+    bottom: 30%; /* Ajusta la posición vertical relativa a la sección */
+    right: 30px;
+
+}
+
+
+
+
+
+/* Estilo original para pantallas grandes (ordinador) permanece intacto */
+/* Estilo original permanece intacto */
+
+/* Ajustes para tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Organizar el contenido en columna */
+        align-items: center; /* Centrar los elementos dentro */
+        margin-top: 20px; /* Reducir margen superior */
+        width: 390px;
+        
+    }
+
+    ul {
+        font-size: 20px; /* Reducir tamaño de la fuente del menú */
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center;
+       
+        margin-top: 1px; /* Agregar espacio superior */
+    }
+
+    ul li {
+        margin-bottom: 10px; /* Espaciado entre los elementos */
+        margin-right: 0%; /* Eliminar márgenes laterales */
+    }
+
+    .logo {
+        font-size: 40px; /* Reducir tamaño del logo */
+        margin-left: 0; /* Centrar el logo */
+        text-align: center; /* Asegurar que se centra */
+    }
+    .pic {
+        width: auto; /* Ajusta automáticamente al contenido */
+        height: 40%; /* Ajusta la altura de la imagen */
+        object-fit: cover; /* Mantén las proporciones */
+        border-radius: 350px 220px 310px 220px;
+        position: absolute; /* Coloca la imagen en una posición específica */
+        bottom: 30%; /* Ajusta la posición vertical relativa a la sección */
+        right: -150px;
+       
+    }
+    .text{
+        position: absolute;
+        bottom: 80%;
+        font-size: 80px;
+    }
+    .text2{
+        position: absolute;
+        padding-left: 15%;
+        font-size: 30px;
+        bottom: 75%;
+        
+
+    
+    }
+    .text, .text2 {
+        margin: 0; /* Elimina márgenes adicionales */
+        z-index: 1; /* Asegura que el texto quede encima de la imagen */
+        position: absolute;
+        left: 10%;
+    }
+    ul li:last-child {
+        margin-right: 0; /* Eliminar margen adicional en pantallas pequeñas */
+    }
+  
+
+    
+}
+
+/* Ajustes para móviles (max-width: 428px) */
+@media screen and (max-width: 428px) {
+    header {
+        flex-direction: column; /* Disponer elementos en columna */
+        align-items: center; /* Centrar los elementos */
+        margin-top: 10px; /* Reducir margen superior */
+    }
+
+    ul {
+        font-size: 18px; /* Reducir aún más el tamaño del menú */
+        flex-direction: column; /* Hacer el menú vertical */
+        align-items: center; /* Centrar los elementos */
+        text-align: center; /* Centrar texto */
+        margin: 10px 0; /* Espacio alrededor */
+    }
+
+    ul li {
+        margin-bottom: 8px; /* Espacio entre opciones del menú */
+        margin-right: 0; /* Sin márgenes laterales */
+    }
+
+    .logo {
+        font-size: 35px; /* Reducir tamaño del logo para móviles */
+        margin-left: 0; /* Centrar el logo */
+        text-align: center; /* Asegurar que se centra */
+    }
+    
+    ul li a {
+        color: #e79fbe; /* Cambiar color del texto en móviles */
+    }
+
+    ul li a:hover {
+        color: white; /* Cambiar color en hover */
+    }
+
+    /* Agregar un fondo detrás del navbar para móviles */
+    header {
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+        width: 100%; /* Asegurarse de que ocupe todo el ancho */
+        padding: 10px 0; /* Espaciado vertical */
+    }
+
+    
+}
+
+
+
+
+/* Estilos generales para escritorio y tabletas */
+.about {
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% de la altura de la ventana */
+    display: flex; /* Flexbox para organizar elementos */
+    justify-content: flex-start; /* Empuja el contenido principal al principio */
+    align-items: center; /* Centra verticalmente los elementos principales */
+    background-color: #501c1c; /* Fondo oscuro */
+    position: relative; /* Para posicionar elementos en relación con esta sección */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho y alto */
+
+
+    background-image: url('../background/flores.jpg');
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección manteniendo su calidad */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* Fija la imagen al fondo, no se moverá cuando haga scroll */
+    background-color: #000; /* Fondo de respaldo en caso de que la imagen no cargue */
+
+
+
+}
+
+.pic1 {
+    width: 30%; /* Tamaño relativo al ancho del contenedor */
+    height: auto; /* Mantén la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    border-radius: 220px 350px 220px 310px; /* Bordes personalizados */
+    margin-right: 20px; /* Añade margen derecho para separar la imagen del texto */
+}
+
+.a1 {
+    color: white;
+    flex: 1; /* Ocupa el espacio restante */
+    max-width: 70%; /* Limita el ancho del texto para no ocupar más espacio que la imagen */
+    text-align: justify; /* Justifica el texto para mejor presentación */
+}
+
+.a1 h1 {
+    margin-bottom: 20px; /* Espacio entre el título y el texto */
+    font-size: 5em;
+    font-family: 'Cormorant Garamond', sans-serif; 
+    margin-left: 10%;
+}
+
+.a1 p {
+    font-size: 2em;
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-family: 'Gowun Dodum', sans-serif;
+    line-height: 1.6;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.a2 {
+    color: white;
+    text-align: center; /* Centra el texto horizontalmente */
+    position: absolute; /* Permite posicionar el quote en el centro inferior */
+    bottom: 10%; /* Ajusta la posición desde la parte inferior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que el centro sea el punto de referencia */
+    max-width: 60%; /* Limita el ancho del quote */
+}
+
+.a2 h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.a2 h2 {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.logo1 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    margin-left: 50px;
+    font-size: 55px;
+    position: absolute;
+    top: 4%;
+    left: 1%;
+}
+
+.logo1:hover {
+    color: #e79fbe;
+}
+
+/* Clase para aplicar el efecto de desenfoque */
+.blur-background {
+    filter: blur(5px); /* Desenfoque de 5 píxeles */
+    transition: filter 0.3s ease; /* Efecto suave al aplicar el desenfoque */
+}
+
+/* Media queries para dispositivos móviles y tabletas */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Organiza los elementos en columna */
+        height: auto; /* Permite que la altura se ajuste al contenido */
+        padding: 10px; /* Reduce el padding */
+        width: 390px;
+       
+  
+        
+    }
+
+    .pic1 {
+        top: 30px;
+        width: 50%; /* Reduce el tamaño de la imagen */
+        margin: 0 auto; /* Centra la imagen */
+        position: relative; /* Cambia a relative para evitar solapamientos */
+    }
+
+    .a1 {
+        max-width: 90%; /* Aumenta el ancho máximo del texto */
+        text-align: r; /* Centra el texto */
+        margin-right: 0; /* Elimina el margen derecho */
+        padding-top: 20px; /* Añade espacio arriba para que no se solape */
+        font-size: 1em;
+
+    }
+
+    .a1 h1 {
+        font-size: 3em; /* Ajusta el tamaño del título */
+        position: relative; /* Cambia a relative para evitar solapamientos */
+        top: auto; /* Elimina el desplazamiento superior */
+        right: auto; /* Elimina el desplazamiento a la derecha */
+        text-align: center;
+        margin-left: 10px;
+
+    }
+
+    .a1 p {
+        font-size: 1.5em; /* Reduce el tamaño de la fuente */
+        position: relative; /* Cambia a relative */
+        top: auto; /* Elimina el desplazamiento superior */
+        font-size: 20px;
+        text-align: justify;
+        margin-left: 0;
+       
+    }
+
+    .a2 {
+        max-width: 90%; /* Aumenta el ancho máximo del quote */
+        bottom: -1%; /* Ajusta la posición desde la parte inferior */
+        position: relative; /* Cambia a relative */
+        top:20px;
+        font-size: 10px;
+        margin-bottom: 40px;
+        text-align: center;
+        
+    }
+
+    .logo1 {
+        font-size: 40px; /* Reduce el tamaño del logo */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        position: relative; /* Cambia a relative para evitar solapamientos */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo general para la sección de la galería */
+.gallery {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Pseudo-elemento para el fondo desenfocado */
+.gallery::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../background/gl2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Contenedor de la galería */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+/* Animación continua de las tarjetas */
+.card-container {
+    display: flex;
+    animation: slide 20s linear infinite;
+}
+
+/* Animación para mover las tarjetas horizontalmente */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Desplaza el contenido hasta la mitad */
+    }
+}
+
+/* Estilo de las tarjetas */
+.card {
+    width: 250px;
+    height: 350px;
+    margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Indica que la tarjeta es interactiva */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+   
+}
+
+/* Efecto de agrandar la tarjeta cuando el cursor pasa sobre ella */
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la tarjeta */
+}
+
+/* Efecto de agrandar aún más la tarjeta al hacer clic en ella */
+.card.clicked {
+    transform: scale(1.15); /* Aumenta más el tamaño al hacer clic */
+}
+
+/* Estilo de las imágenes dentro de las tarjetas */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Cuando el cursor pasa sobre la galería, se detiene la animación */
+.gallery-container:hover .card-container {
+    animation-play-state: paused; /* Detiene la animación al pasar el cursor */
+}
+
+
+/* Contenedor principal de la sección */
+.section-title-container {
+    position: relative;
+    text-align: center;
+    margin-top: 50px; /* Ajusta la distancia desde la parte superior */
+}
+
+
+/* Contenedor principal de la sección */
+.section-title-container {
+    position: relative;
+    text-align: center;
+    margin-top: 50px; /* Ajusta la distancia desde la parte superior */
+}
+
+/* Título principal */
+.writing-effect {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    color: thistle;
+    position: relative;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+}
+
+/* Efecto de partículas (estrellas o luces flotantes) */
+@keyframes star-animation {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-20px) scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+}
+
+/* Estilo para las estrellas flotantes */
+.star {
+    position: absolute;
+    animation: star-animation 3s ease-in-out infinite;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 1;
+    right: 10%;
+   bottom: -100%;
+}
+
+.star:nth-child(odd) {
+    animation-duration: 2s;
+}
+
+.star:nth-child(even) {
+    animation-duration: 3s;
+}
+
+/* Estilo para las estrellas */
+.star:before {
+    content: '.';
+    font-size: 40px;
+    color: #d99393;
+    position: absolute;
+}
+
+/* Agregar algunas posiciones y hacer que las estrellas se ubiquen en distintas partes de la pantalla */
+.star:nth-child(1) {
+   
+    left: 20%;
+}
+
+.star:nth-child(2) {
+    
+    left: 90%;
+}
+
+.star:nth-child(3) {
+   
+    left: 60%;
+}
+
+.star:nth-child(4) {
+   
+    left: 200%;
+}
+
+.star:nth-child(5) {
+   
+    left: 10%;
+}
+
+
+
+/* Estilo original de la galería para pantallas grandes se mantiene igual */
+
+/* Estilo específico para pantallas de tablets y móviles */
+@media (max-width: 768px) {
+    /* Ajusta el contenedor principal de la galería */
+    .gallery {
+        height: 900px; /* Permite que la galería ajuste su altura al contenido */
+        padding: 20px; /* Agrega espacio alrededor del contenido */
+        overflow: visible; /* Permite que los elementos sean visibles si salen del contenedor */
+        flex-direction: column; /* Cambia la dirección a columna */
+        width: 390px;
+    }
+
+    /* Ajusta el contenedor de las tarjetas */
+    .gallery-container {
+        flex-direction: column; /* Cambia la dirección de las tarjetas a columna */
+        width: 100%; /* Ocupa el ancho completo */
+    }
+
+    /* Ajusta las tarjetas individuales */
+    .card {
+        width: 50%; /* Reduce el tamaño de las tarjetas en pantallas pequeñas */
+        height: 50%; /* Permite que la altura se ajuste automáticamente */
+        position: relative;
+        width: 250px;
+        height: 350px;
+        margin-right: 15px;
+        transition: transform 1s ease-in-out;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        cursor: pointer; /* Indica que la tarjeta es interactiva */
+        border-radius: 10px; /* Esquinas redondeadas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        
+       
+    }
+
+    /* Ajusta las imágenes dentro de las tarjetas */
+    .card img {
+        object-fit: contain; /* Asegura que las imágenes se ajusten bien dentro del contenedor */
+        border-radius: 50px; /* Mantiene esquinas redondeadas */
+    }
+
+    .logo1 {
+        font-size: 40px; /* Reduce el tamaño del logo */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        position: relative; /* Cambia a relative para evitar solapamientos */
+        top: -26%;
+    }
+
+    /* Ajusta las estrellas animadas */
+    .star {
+        font-size: 20px; /* Reduce el tamaño de las estrellas */
+        opacity: 0.6; /* Reduce la opacidad para un efecto más sutil */
+    }
+
+    .star:before {
+        font-size: 20px; /* Ajusta el tamaño del contenido de las estrellas */
+    }
+
+    /* Cambia las posiciones de las estrellas para evitar saturación en pantallas pequeñas */
+    .star:nth-child(1) { left: 10%; }
+    .star:nth-child(2) { left: 80%; }
+    .star:nth-child(3) { left: 50%; }
+    .star:nth-child(4) { left: 30%; }
+    .star:nth-child(5) { left: 70%; }
+}
+
+
+
+
+/* Sección de proyectos */
+
+
+
+
+/* Estilo para la sección de proyectos */
+.projects {
+    position: relative;
+    width: 100vw;
+    height: 100vh; /* Asegura que haya espacio suficiente para desplazar la flecha */
+    background-color: #501c1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+    background-image: url('../background/black.jpg');
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección manteniendo su calidad */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* Fija la imagen al fondo, no se moverá cuando haga scroll */
+    background-color: #000; /* Fondo de respaldo en caso de que la imagen no cargue */
+}
+
+/* Estilo para la cabecera */
+
+
+/* Contenedor de los proyectos */
+.timeline-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 90%;
+    width: 20%;
+}
+
+/* Línea de tiempo */
+.timeline-items::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 0; /* Inicialmente no tiene altura */
+    background-color: #e79fbe; /* Color principal */
+    left: calc(50% - 1px);
+    transition: height 1s ease-out; /* Para transiciones suaves */
+}
+
+/* Flecha al final de la línea */
+.timeline-items::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 9px); /* Centra la flecha en la línea */
+    width: 1;
+    height: 1;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid rgb(255, 183, 183); /* Color de la flecha */
+}
+/* Línea animada cuando la sección es visible */
+.timeline-items.animate-line::before {
+    height: 100%; /* La línea crece hasta llenar toda la altura */
+}
+
+.timeline-items:hover{
+    color:  pink;
+}
+
+
+/* Item de la línea de tiempo */
+.timeline-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+/* Para los proyectos en posiciones impares */
+.timeline-item:nth-child(odd) .timeline-content {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+    position: relative;
+}
+
+
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+   
+    top: 50%;
+    right: -20px; /* Ajusta la posición para la flecha a la derecha */
+    transform: translateY(-50%);
+}
+
+/* Para los proyectos en posiciones pares */
+.timeline-item:nth-child(even) .timeline-content {
+    padding-left: calc(50% + 30px);
+    position: relative;
+}
+
+
+
+/* Fecha de los proyectos */
+.timeline-date {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+
+/* Contenido de los proyectos */
+.timeline-content {
+    background-color:rgb(19, 19, 19) ; /* Fondo oscuro */
+    border: 3px solid rgb(26, 25, 25); /* Color principal */
+    padding: 2rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px grey;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* Efecto hover para el contenido */
+.timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px ;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+    font-family: 'Gowun Dodum', sans-serif;
+
+}
+
+.timeline-content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+/* Animación inicial oculta */
+.timeline-item {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Animación cuando aparece */
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Proyectos en posiciones pares se deslizan desde la derecha */
+.timeline-item:nth-child(even) {
+    transform: translateX(100px);
+   
+    transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+
+
+/* Descripción oculta inicialmente */
+.timeline-description {
+    position: absolute;
+    top: 50%; /* Centrado verticalmente */
+    transform: translateY(-50%) scale(0.8); /* Escala inicial para el efecto */
+    left: calc(100% + 20px); /* Aparece al lado derecho */
+    width: 700px; /* Ancho de la descripción */
+    background-color:  rgb(28, 28, 28);
+    border: 1px solid black;
+    padding: 1rem 8rem 1rem 1rem ;
+    border-radius: 0rem 9rem 0rem 9rem ;
+    box-shadow: 5px 5px 5px 5px rgba(35, 19, 19, 0.3);
+    color: white;
+    font-size: 16px;
+    font-family: 'Gowun Dodum', sans-serif;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    text-align: center;
+
+
+}
+
+/* Descripción visible */
+.timeline-item.active .timeline-description {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-50%) scale(1);
+}
+/* Proyectos que entran desde la izquierda */
+.timeline-item.centered {
+    transform: translateX(-100%); /* Posición inicial fuera de pantalla por la izquierda */
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+/* Cuando el proyecto está en el centro y visible */
+.timeline-item.centered.visible {
+    transform: translateX(0); /* Posición normal */
+    opacity: 1;
+}
+/* Media Queries para pantallas pequeñas (móviles) */
+
+@media (max-width: 768px) {
+    /* Cambiar el contenedor de los proyectos a un ancho más adecuado */
+    .projects {
+        width: 390px;
+        max-width: 100%; /* Asegura que el contenedor no se desborde */
+        overflow: hidden; /* Oculta cualquier contenido desbordante */
+    }
+
+    .timeline-items {
+        width: 390px; /* Se amplía el contenedor para pantallas más pequeñas */
+        margin-left: 2%;
+        max-width: 100%; /* Ajusta el ancho a la pantalla */
+        overflow: hidden; /* Previene que el contenido se desborde */
+    }
+
+    /* Reducir el tamaño de los proyectos */
+    .timeline-item {
+        margin-bottom: 20px; /* Menos espacio entre los proyectos */
+        width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
+    }
+
+    .timeline-content {
+        padding: 2rem 4rem 1rem 2rem; /* Reducir el padding para ajustar el contenido */
+        font-size: 10px; /* Reducir el tamaño de la fuente dentro del cuadro */
+        width: 50%; /* Ajustar el ancho al contenedor */
+        max-width: 40%; /* Evitar que el contenido sobrepase el ancho del contenedor */
+        border-radius: 2rem 5rem 2rem 5rem; /* Esquinas más redondeadas */
+        
+    }
+
+    .timeline-content h3 {
+        font-size: 10px; /* Reducir el tamaño del título */
+        color: #e79fbe;
+    }
+
+    .timeline-content p {
+        font-size: 12px; /* Reducir el tamaño del texto */
+        color: #e79fbe;
+    }
+
+    /* Asegurarse de que las descripciones se vean bien */
+    .timeline-description {
+        width: 110%; /* Ajustar el ancho de la descripción */
+        left: -10px;
+        margin-top: 5px;
+        font-size: 10px; /* Reducir el tamaño del texto en las descripciones */
+        color: #e79fbe;
+    }
+    
+    .timeline-date {
+        font-size: 16px; /* Reducir tamaño de la fecha */
+    }
+
+    /* Hacer que la línea de tiempo sea más delgada en pantallas pequeñas */
+    .timeline-items::before {
+        width: 3px; /* Reducir el grosor de la línea */
+    }
+}
+
+
+
+
+/*books section */
+.library {
+    padding: 4rem 2rem;
+    width: 100vw;
+    height: 100vh; 
+    text-align: center;
+  }
+  
+  .library h2 {
+    font-size: 2rem;
+    
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: thistle;
+  }
+  
+  .book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 5rem; /* Desplaza la lista de libros hacia abajo */
+  }
+  
+  .book-card {
+    background-color: #0d0d0d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none; /* Quitar subrayado del enlace */
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .book-card h3 {
+    font-size: 1.2rem;
+    color: #c2c2c2;
+    margin-top: 1rem;
+  }
+  
+  .book-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+  }
+  
+
+
+  /* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .library {
+      padding: 2rem 1rem; /* Reduce el padding */
+      width: 390px;
+    }
+  
+    .library h2 {
+      font-size: 1.5rem; /* Reduce el tamaño del título */
+      font-family: 'Dancing Script', cursive;
+      color: thistle;
+    }
+  
+    .book-list {
+      grid-template-columns: 1fr 1fr; /* Cambia a una sola columna */
+      gap: 1rem; /* Reduce el espacio entre los libros */
+      margin-top: 2rem; /* Menos margen superior */
+    }
+  
+    .book-card {
+      max-width: 90%; /* Aumenta el tamaño de las tarjetas en móviles */
+    }
+  
+    .book-card h3 {
+      font-size: 1rem; /* Reduce el tamaño del título de los libros */
+    }
+  
+    .book-card p {
+      font-size: 0.9rem; /* Reduce el tamaño de la descripción */
+    }
+  }
+
+
